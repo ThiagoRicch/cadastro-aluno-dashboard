@@ -1,0 +1,6 @@
+INSERT INTO ALUNOS (Matrícula, Nome, Sobrenome, Curso)
+VALUES ('G23409I', 'Marcos', 'Oliveira', 'Medicina');
+
+INSERT INTO NOTAS (Matrícula, Nota1, Nota2, Media, Status_Aluno)
+VALUES ('G23409I', 8.0, 9.0, 8.5, 'APROVADO');
+GO

@@ -1,0 +1,6 @@
+-- bibliotecas necessárias para o dashboard
+
+pandas
+pyodbc
+matplotlib
+seaborn

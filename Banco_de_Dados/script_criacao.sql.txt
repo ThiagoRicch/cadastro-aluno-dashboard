@@ -1,0 +1,27 @@
+CREATE DATABASE DADOS_ALUNOS;
+GO
+
+USE DADOS_ALUNOS;
+GO
+
+-- Tabela de alunos
+CREATE TABLE ALUNOS (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Matrícula VARCHAR(20) UNIQUE,
+    Nome VARCHAR(100),
+    Sobrenome VARCHAR(100),
+    Curso VARCHAR(100),
+    
+);
+GO
+
+-- Tabela de notas
+CREATE TABLE NOTAS (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Matrícula VARCHAR(20),
+    Nota1 FLOAT,
+    Nota2 FLOAT,
+    Media FLOAT,
+    Status_Aluno VARCHAR(20)
+    FOREIGN KEY (Matrícula) REFERENCES ALUNOS(Matrícula)
+);
